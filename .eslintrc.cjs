@@ -17,7 +17,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
     project: true,
-    tsconfigRootDir: ['tsconfig.json'],
+    tsconfigRootDir: 'tsconfig.json',
   },
   plugins: ['react-refresh'],
   rules: {
