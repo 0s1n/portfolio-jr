@@ -7,7 +7,9 @@ module.exports = {
     es2020: true,
   },
   extends: [
-    'eslint:recommended',
+    'airbnb',
+    'airbnb/hooks',
+    'airbnb-typescript',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:react-hooks/recommended',
@@ -27,5 +29,6 @@ module.exports = {
     ],
     '@typescript-eslint/no-non-null-assertion': 'off',
     'max-len': ['error', { code: 80, tabWidth: 2 }],
+    'react/react-in-jsx-scope': 'off',
   },
-}
+};
