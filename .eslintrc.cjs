@@ -19,8 +19,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: true,
-    tsconfigRootDir: 'tsconfig.json',
+    project: ['tsconfig.json'],
   },
   plugins: ['react-refresh', 'react', '@typescript-eslint', 'prettier'],
   rules: {
@@ -32,4 +31,5 @@ module.exports = {
     'max-len': ['error', { code: 80, tabWidth: 2 }],
     'react/react-in-jsx-scope': 'off',
   },
+  ignorePatterns: ['node_modules', 'dist', 'build', 'vite.config.ts'],
 };
